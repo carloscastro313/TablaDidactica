@@ -1,0 +1,28 @@
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ion-img {
+        width: 50%;
+    }
+}
+
+form {
+    padding-top: 10px;
+    ion-button {
+        padding-top: 10px;
+    }
+}
+
+ion-fab-list {
+    ion-fab-button {
+        width: 55px !important;
+        height: 55px !important;
+    }
+}
+
+.gridBtn {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    gap: 2%;
+}
