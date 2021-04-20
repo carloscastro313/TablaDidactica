@@ -4,7 +4,7 @@
         <ion-img src="/assets/login.png"></ion-img>
     </div>
     <ion-text color="primary">
-        <h1>Inicio de sesion</h1>
+        <h1>Inicio de sesión</h1>
     </ion-text>
     <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
         <ion-item color="primary">
@@ -30,24 +30,32 @@
             </ion-row>
         </ion-grid>
     </form>
-    <ion-text color="dark">
-        <h5>Ingreso rapido: </h5>
-    </ion-text>
-    <div class="gridBtn">
-        <ion-button block color="danger" (click)="fastAccess('usuario@usuario.com','333333')" [disabled]="formLogin.disabled">
-            Usuario
-        </ion-button>
-        <ion-button block color="secondary" (click)="fastAccess('admin@admin.com','111111')" [disabled]="formLogin.disabled">
-            Admin
-        </ion-button>
-        <ion-button block color="tertiary" (click)="fastAccess('invitado@invitado.com','222222')" [disabled]="formLogin.disabled">
-            Invitado
-        </ion-button>
-        <ion-button block color="success" (click)="fastAccess('tester@tester.com','555555')" [disabled]="formLogin.disabled">
-            Tester
-        </ion-button>
-        <ion-button block color="warning" (click)="fastAccess('anonimo@anonimo.com','444444')" [disabled]="formLogin.disabled">
-            Anonimo
-        </ion-button>
+    <div class="access">
+        <ion-text color="dark">
+            <h5>Ingreso rápido: </h5>
+        </ion-text>
+        <div class="center">
+            <div class="gridBtn2">
+                <ion-button block color="danger" (click)="fastAccess('usuario@usuario.com','333333')" [disabled]="formLogin.disabled">
+                    Usuario
+                </ion-button>
+                <ion-button block color="secondary" (click)="fastAccess('admin@admin.com','111111')" [disabled]="formLogin.disabled">
+                    Admin
+                </ion-button>
+            </div>
+
+            <div class="gridBtn3">
+                <ion-button block color="tertiary" (click)="fastAccess('invitado@invitado.com','222222')" [disabled]="formLogin.disabled">
+                    Invitado
+                </ion-button>
+                <ion-button block color="success" (click)="fastAccess('tester@tester.com','555555')" [disabled]="formLogin.disabled">
+                    Tester
+                </ion-button>
+                <ion-button block color="warning" (click)="fastAccess('anonimo@anonimo.com','444444')" [disabled]="formLogin.disabled">
+                    Anónimo
+                </ion-button>
+            </div>
+        </div>
     </div>
+
 </ion-content>

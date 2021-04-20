@@ -21,8 +21,23 @@ ion-fab-list {
     }
 }
 
-.gridBtn {
+.access {
+    padding-top: 2em;
+}
+
+.center {
     display: grid;
-    grid-template-columns: 25% 25% 25%;
-    gap: 2%;
+    place-items: center;
+}
+
+.gridBtn2 {
+    display: grid;
+    grid-template-columns: 5em 5em;
+    gap: 0.5em;
+}
+
+.gridBtn3 {
+    display: grid;
+    grid-template-columns: 5em 5em 5em;
+    gap: 0.5em;
 }

@@ -1,11 +1,36 @@
-<ion-header>
-    <ion-toolbar>
-        <ion-title>
-            Blank
-        </ion-title>
-    </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
-</ion-content>
+<app-side-menu>
+</app-side-menu>
+<ion-router-outlet id="main"></ion-router-outlet>
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+        <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+        <ion-fab-button block color="primary" (click)="setLang('portugues')">
+            <img class="banderaImg" src="/assets/banderas/brazil.png">
+        </ion-fab-button>
+        <ion-fab-button block color="primary" (click)="setLang('español')">
+            <img class="banderaImg" src="/assets/banderas/spain.png">
+        </ion-fab-button>
+        <ion-fab-button block color="primary" (click)="setLang('ingles')">
+            <img class="banderaImg" src="/assets/banderas/united-states.png">
+        </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+        <ion-fab-button block color="primary" routerDirection="root" (click)="goto('../home/animales')">
+            <div class="center">
+                <img class="pageImg" src="/assets/pages/pawprint.png">
+            </div>
+        </ion-fab-button>
+        <ion-fab-button block color="primary" routerDirection="root" (click)="goto('../home/numeros')">
+            <div class="center">
+                <img class="pageImg" src="/assets/pages/numeros.png">
+            </div>
+        </ion-fab-button>
+        <ion-fab-button block color="primary" routerDirection="root" (click)="goto('../home/colores')">
+            <div class="center">
+                <img class="pageImg" src="/assets/pages/color.png">
+            </div>
+        </ion-fab-button>
+    </ion-fab-list>
+</ion-fab>

@@ -194,10 +194,16 @@
 }
 
 @font-face {
-    font-family: 'ArchitectsDaughter';
-    src: url('../assets/ArchitectsDaughter-Regular.ttf');
+    font-family: 'Righteous';
+    src: url('../assets/Righteous-Regular.ttf');
 }
 
 * {
-    font-family: ArchitectsDaughter;
+    font-family: Righteous;
+}
+
+.center {
+    display: flex;
+    place-items: center;
+    justify-content: center;
 }
